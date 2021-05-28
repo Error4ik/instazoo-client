@@ -27,7 +27,7 @@ export class TokenService {
   }
 
   public getUser(): any {
-    const user = sessionStorage.getItem(TOKEN_KEY);
+    const user = sessionStorage.getItem(USER_KEY);
     return user == null ? user : JSON.parse(user);
   }
 
