@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Post} from '../models/Post';
 
 const POST_API = 'http://localhost:9920/api/post/';
 
@@ -13,7 +12,7 @@ export class PostService {
   constructor(private httpClient: HttpClient) {
   }
 
-  createPost(post: Post): Observable<any> {
+  createPost(post: any): Observable<any> {
     return this.httpClient.post(POST_API + 'create', post);
   }
 
