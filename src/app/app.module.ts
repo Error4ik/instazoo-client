@@ -13,6 +13,10 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { IndexComponent } from './layout/index/index.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
+import { UserPostsComponent } from './components/user/user-posts/user-posts.component';
+import { EditUserComponent } from './components/user/edit-user/edit-user.component';
+import { AddPostComponent } from './components/user/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { IndexComponent } from './layout/index/index.component';
     LoginComponent,
     RegisterComponent,
     NavigationComponent,
-    IndexComponent
+    IndexComponent,
+    ProfileComponent,
+    UserPostsComponent,
+    EditUserComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
