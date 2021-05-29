@@ -33,4 +33,8 @@ export class ImageService {
   getImageToPost(postId: string): Observable<any> {
     return this.httpClient.get(IMAGE_API + postId + '/' + 'post-image');
   }
+
+  formatImage(image: any): any {
+    return image ? 'data:image/jpeg;base64,' + image : null;
+  }
 }

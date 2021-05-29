@@ -73,7 +73,7 @@ export class IndexComponent implements OnInit {
   }
 
   formatImage(image: any): any {
-    return image ? 'data:image/jpeg;base64,' + image : null;
+    return this.imageService.formatImage(image);
   }
 
   private getImagesForPosts(posts: Post[]): void {
